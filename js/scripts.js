@@ -274,7 +274,7 @@ Google Maps
 
 $("#map").gmap3({
     marker:{     
-	address:"93 Worth St, New York, NY", 
+	address:" Pereira, Colombia", 
 	options:{ icon: "img/marker.png"}},
     map:{
     options:{
