@@ -677,7 +677,7 @@ h2 small {
 /* ==== 5) About ==== */
 #about {
 	padding-top: 0px;
-	padding-bottom: 60px;
+	padding-bottom: 0px;
 }
 .section-title-about {
 	text-align: center;
@@ -755,7 +755,7 @@ h2 small {
 	position: relative;
 }
 .grid figure img {
-	max-width: 100%;
+	max-width: 90%;
 	display: block;
 	position: relative;
 }
@@ -1005,7 +1005,7 @@ h2 small {
 }
 /* ==== 13) Portfolio ==== */
 #our-work {
-	padding-top: 60px;
+	padding-top: 0px;
 	padding-bottom: 60px;
 }
 .portfolio-container { 
