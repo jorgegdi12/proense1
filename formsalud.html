@@ -8,9 +8,9 @@
 		<title>
 			Proense-formulario salud
 		</title>
-		<meta name="description" content="A Template by Vossen Design"/>
-		<meta name="keywords" content="HTML5, Bootstrap 3, CSS3, javascript, PHP, onepage, responsive, mobile"/>
-		<meta name="author" content="Vossen Design"/>
+		<meta name="description" content="Este es el formulario para salud de proense"/>
+		<meta name="keywords" content="seguro vida,soat,asesora en seguros, seguro hogar, seguro autos, seguro empresarial, seguro salud "/>
+		<meta name="author" content="proense"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 		<!-- Web Fonts -->
@@ -68,19 +68,7 @@
 					<div class="collapse navbar-collapse" id="main-nav">
 						<ul class="nav navbar-nav  navbar-right">
 							<li>
-								<a href="#home-slideshow">Inicio</a>
-							</li>
-							<li>
-								<a href="#about">Nosotros</a>
-							</li>
-							<li>
-								<a href="#services">Servicios</a>
-							</li>
-							<li>
-								<a href="#contact-form">Contáctenos</a>
-							</li>
-							<li>
-								<a href="#">Blog</a>
+								<a href="index.html">Inicio</a>
 							</li>
 						</ul>
 					</div>
@@ -92,10 +80,10 @@
 <script>
 function agregarBeneficiario(){
  $('#btnAgregarBeneficiario').after('<fieldset><legend>Beneficiario</legend>\n\
-<table>\n\
+<table class="table">\n\
    <tr>\n\
     <td><strong>Tipo de identificación:</strong></td>\n\
-                <td><select name="tipo_id[]" id="tipodoc" >\n\
+                <td><select name="tipo_id[]" class="form-control form-color" id="tipodoc" >\n\
                  <option value="0">Seleccione tipo de documento</option>\n\
                     <option value="cc">CC</option>\n\
                     <option value="ce">CE</option>\n\
@@ -113,22 +101,22 @@ function agregarBeneficiario(){
   </tr>\n\
   <tr>\n\
     <td>Número de identificación:</td>\n\
-    <td><input type="text" name="numid[]" id="numid"></td>\n\
+    <td><input type="text" class="form-control form-color" name="numid[]" id="numid"></td>\n\
   </tr>\n\
   <tr>\n\
     <td>Nombre Completo:</td>\n\
-    <td><input type="text" name="fullname[]" id="fullname"></td>\n\
+    <td><input type="text" class="form-control form-color" name="fullname[]" id="fullname"></td>\n\
   </tr>\n\
    <tr>\n\
     <td>Fecha de nacimiento:</td>\n\
-    <td><input type="date" name="birthdayben[]" id="birthdayben"></td>\n\
+    <td><input type="date" class="form-control form-color" class="form-control form-color" name="birthdayben[]" id="birthdayben"></td>\n\
   </tr>\n\
   <tr><td>Sexo: <input type="radio" name="sexo[]" value="masculino">masculino\n\
   <input name="sexo[]" type="radio" value="femenino">femenino\n\
   </td>\n\
   </tr>\n\
   <td>Parentesco:</td>\n\
-  <td><select name="parentezco[]" id="parentezco" >\n\
+  <td><select name="parentezco[]" class="form-control form-color" id="parentezco" >\n\
                 	<option value="0">Seleccione parentesco</option>\n\
                     <option value="afiliado">afiliado</option>\n\
                     <option value="conyuge">conyuge</option>\n\
@@ -151,47 +139,66 @@ function agregarBeneficiario(){
 </header>
 <!--End Header-->
 <section>
-  <article class="quienes">
-  <h1>Seguro de Salud</h1>
-  </article>
-  <div class="formulario">
-  	<form class="forms" name="tomador" method="post" action="envio.php">
-  <span>Datos del Tomador</span>
-  <label>Nombre Completo:</label>
-    <input type="text" name="name" id="nombre" />
-    <label>Cédula o Nit:</label>
-    <input type="text" name="cedula" id="cedula" />
-  <label>Fecha de nacimiento:</label>
-    <input type="date" name="birthday" id="birthday">
-  <label>Profesión u oficio:</label>
-    <input type="text" name="profession" id="profession" />
-    <label>Correo Electónico:</label>
-     <input type="text" name="email" id="correo" />
-    <label>Celular:</label>
-      <input type="text" name="celular" id="celular" />
-      <label>Dirección de trabajo:</label>
-    <input type="text" name="work-address" id="work-address" />
-    <label>Teléfono de trabajo</label>
-    <input type="text" name="work-phone" id="work-phone" />
-  <label>Dirección de residencia:</label>
-    <input type="text" name="home-address" id="home-address"/>
-    <label>Teléfono de residencia:</label>
-    <input type="text" name="home-phone" id="home-phone" />
+  <div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-offset-2 margin_big-bottom"> 
+					<h3 class="text-center">
+						 <small>
+						 	Formulario salud
+						 </small>
+					</h3>
+				    <form class="forms" name="tomador" method="post" action="envio.php">
+				    <span>Datos del Tomador</span>
+				     <div class="form-group">
+					  	<label>Nombre Completo:</label>
+					    <input type="text" class="form-control form-color" name="name" id="nombre" />
+					 </div>
+				     <div class="form-group">
+					   <label>Cédula o Nit:</label>
+					   <input type="text" class="form-control form-color" name="cedula" id="cedula" />
+					 </div>
+					 <div class="form-group">
+					    <label>Fecha de nacimiento:</label>
+					    <input type="date" class="form-control form-color" name="birthday" id="birthday"/>
+					 </div>
+					 <div class="form-group">
+						<label>Profesión u oficio:</label>
+					    <input type="text" class="form-control form-color" name="profession" id="profession" />
+					 </div>
+					 <div class="form-group">
+					     <label>Correo Electónico:</label>
+					     <input type="email" class="form-control form-color" name="email" id="correo" />
+					 </div>
+					 <div class="form-group">
+					    <label>Celular:</label>
+					    <input type="text" class="form-control form-color" name="celular" id="celular" />
+					 </div>
+					 <div class="form-group">
+					    <label>Dirección de trabajo:</label>
+					    <input type="text" class="form-control form-color" name="work-address" id="work-address" />
+					 </div>
+					 <div class="form-group">
+					   <label>Teléfono de trabajo</label>
+					   <input type="text" class="form-control form-color" name="work-phone" id="work-phone" />
+					 </div>
+					 <div class="form-group">
+					    <label>Dirección de residencia:</label>
+					    <input type="text" class="form-control form-color" name="home-address" id="home-address"/>
+					 </div>
+					 <div class="form-group">
+					    <label>Teléfono de residencia:</label>
+					    <input type="text" class="form-control form-color" name="home-phone" id="home-phone" />
+					 </div>
   
- <p>Para agregar beneficiario a su póliza :<button type="button" onclick="agregarBeneficiario()" id="btnAgregarBeneficiario">Agregar beneficiario</button></p> 
-  <input type="submit" name="Send-fcar" class="button" value="Enviar" />
- </form>
+ <p>Para agregar beneficiario a su póliza :<button type="button" onclick="agregarBeneficiario()" id="btnAgregarBeneficiario">Agregar beneficiario</button></p> <div class="col-md-12 text-center">
+					<input type="submit" name="Send-fcar" class="submit btn btn-primary" id="submit" value="Enviar" />
+					</div>
+   </form>
  </div>
 </section>
 
 		<!-- Start Footer -->
 			<footer id="footer">
-				<div class="col-lg-12 text-center">
-					<div class="back-to-top">
-						<i class="fa fa-angle-double-up">
-						</i>
-					</div>
-				</div>
 				<div class="container text-center">
 					<div class="row">
 						<div class="col-md-12 footer-social">

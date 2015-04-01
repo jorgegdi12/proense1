@@ -6,11 +6,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>
-			Proense-formulario salud
+			Proense-formulario empresarial
 		</title>
-		<meta name="description" content="A Template by Vossen Design"/>
-		<meta name="keywords" content="HTML5, Bootstrap 3, CSS3, javascript, PHP, onepage, responsive, mobile"/>
-		<meta name="author" content="Vossen Design"/>
+		<meta name="description" content="Este es el formulario para seguro empresarial de proense"/>
+		<meta name="keywords" content="seguro vida,soat,asesora en seguros, seguro hogar, seguro autos, seguro empresarial, seguro salud "/>
+		<meta name="author" content="proense"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 		<!-- Web Fonts -->
@@ -68,19 +68,7 @@
 					<div class="collapse navbar-collapse" id="main-nav">
 						<ul class="nav navbar-nav  navbar-right">
 							<li>
-								<a href="#home-slideshow">Inicio</a>
-							</li>
-							<li>
-								<a href="#about">Nosotros</a>
-							</li>
-							<li>
-								<a href="#services">Servicios</a>
-							</li>
-							<li>
-								<a href="#contact-form">Contáctenos</a>
-							</li>
-							<li>
-								<a href="#">Blog</a>
+								<a href="index.html">Inicio</a>
 							</li>
 						</ul>
 					</div>
@@ -91,72 +79,73 @@
 		</header>
 <!--End Header-->
 <section>
-  <article class="quienes">
-  <h1>Seguro Empresarial</h1>
-  </article>
-  <form class="empresarial" name="empresarial" method="post" action="empresarial.php">
-   <table>
-    <tr>
-      <th scope="col">Artículos</th>
-      <th scope="col">Valor Asegurado</th>
-    </tr>
-    <tr>
-      <td>Edificio</td>
-      <td><label>
-        <input type="text" name="Edificio" id="Edificio" />
-      </label></td>
-    </tr>
-     <tr>
-      <td>Muebles y Enseres</td>
-      <td><label>
-        <input type="text" name="Contenidos" id="Contenidos" />
-      </label></td>
-    </tr>
-    <tr>
-      <td>Maquinaria y Equipos</td>
-      <td><label>
-        <input type="text" name="Maquinaria" id="Maquinaria" />
-      </label></td>
-    </tr>
-    <tr>
-      <td>Equipo Electrónico</td>
-      <td><label>
-        <input type="text" name="electronico" id="electronico" />
-      </label></td>
-      
-    </tr>
-    <tr>
-      <td>Mercancias</td>
-      <td><label>
-        <input type="text" name="fijas" id="fijas" />
-        </label></td>
-    </tr>
-     <tr>
-      <td>Dinero y cheques</td>
-      <td><label>
-        <input type="text" name="dinero" id="dinero" />
-      </label></td>
-    </tr>
-    <tr>
-      <td>Total capital a asegurar</td>
-      <td><label>
-        <input type="text" name="total-asegurado" id="total-asegurado" />
-      </label></td>
-    </tr>
-    <tr>
-    <td align="center"><input type="submit" name="empresarial-boton" id="empresarial-boton" value="Enviar" /></td>
-  </tr>
-</table>
-  </p>
-  </form>	
+  <div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-offset-2 margin_big-bottom"> 
+				<h3 class="text-center">
+					 <small>
+					 	Formulario Empresarial
+					 </small>
+				</h3>
+			  <form class="empresarial" name="empresarial" method="post" action="empresarial.php">
+			   <table class="table">
+			    <tr>
+			      <th scope="col">Artículos</th>
+			      <th scope="col">Valor Asegurado</th>
+			    </tr>
+			    <tr>
+			      <td>Edificio</td>
+			      <td><label>
+			        <input type="text" class="form-control form-color" name="Edificio" id="Edificio" />
+			      </label></td>
+			    </tr>
+			     <tr>
+			      <td>Muebles y Enseres</td>
+			      <td><label>
+			        <input type="text" class="form-control form-color" name="Contenidos" id="Contenidos" />
+			      </label></td>
+			    </tr>
+			    <tr>
+			      <td>Maquinaria y Equipos</td>
+			      <td><label>
+			        <input type="text" class="form-control form-color" name="Maquinaria" id="Maquinaria" />
+			      </label></td>
+			    </tr>
+			    <tr>
+			      <td>Equipo Electrónico</td>
+			      <td><label>
+			        <input type="text" class="form-control form-color" name="electronico" id="electronico" />
+			      </label></td>
+			      
+			    </tr>
+			    <tr>
+			      <td>Mercancias</td>
+			      <td><label>
+			        <input type="text" class="form-control form-color" name="fijas" id="fijas" />
+			        </label></td>
+			    </tr>
+			     <tr>
+			      <td>Dinero y cheques</td>
+			      <td><label>
+			        <input type="text" class="form-control form-color" name="dinero" id="dinero" />
+			      </label></td>
+			    </tr>
+			    <tr>
+			      <td>Total capital a asegurar</td>
+			      <td><label>
+			        <input type="text" class="form-control form-color" name="total-asegurado" id="total-asegurado" />
+			      </label></td>
+			    </tr>
+			    </table>
+			    <div class="col-md-12 text-center">
+					<input type="submit" name="empresarial-boton" class="submit btn btn-primary" id="empresarial-boton" value="Enviar" />
+			   	</div>
+			</form>
+		</div>
+	</div>
+</div>
 </section>		<!-- Start Footer -->
 			<footer id="footer">
-				<div class="col-lg-12 text-center">
-					<div class="back-to-top">
-						<i class="fa fa-angle-double-up">
-						</i>
-					</div>
-				</div>
 				<div class="container text-center">
 					<div class="row">
 						<div class="col-md-12 footer-social">
