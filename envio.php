@@ -303,7 +303,5 @@
      {
       header('Location: envia.html');
      }
-	else
-		
-  }
+	}
 ?>
