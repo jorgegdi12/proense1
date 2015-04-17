@@ -294,7 +294,7 @@
    {
   // Creamos el header para el mensaje
   // para:
-    $to = 'olgalucia@proense.com, info@proense.com, asistente@proense.com';
+    $to = 'proensepereira@gmail.com';
     // Asunto
 	$subject = "Solicitud ".$form;
 	// Cabeceras del mail (Content-Type y demas info)
