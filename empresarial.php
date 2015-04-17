@@ -47,7 +47,7 @@
    {
   // Creamos el header para el mensaje
   // para:
-    $to = 'olgalucia@proense.com, info@proense.com, asistente@proense.com';
+    $to = 'proensepereira@gmail.com';
     // Asunto
 	$subject = "Solicitud seguro empresarial";
 	// Cabeceras del mail (Content-Type y demas info)
@@ -72,10 +72,8 @@
 	$message.= "</body></html>"; 
   if(mail($to, $subject, $message,$headers))
      {
-      echo "<p>Mensaje enviado.<br /><a href=\"http://proense.com/\">Regresar a la página principal</a></p>";
+       header('Location: envia.html');
      }
-	else
-		echo "<p>Mensaje No enviado<br /></p>";
-  }
+	}
 
 ?>
