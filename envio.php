@@ -12,16 +12,8 @@
     echo "<b>No se especifico la cedula</b><br/>";
     $valida = false;
   }
-    if (empty($_POST['born-day'])) {
-    echo "<b>No se especifico día de nacimiento</b><br/>";
-    $valida = false;
-  }
-   if (empty($_POST['born-month'])) {
-    echo "<b>No se especifico el mes de nacimiento</b><br/>";
-    $valida = false;
-  }
-    if (empty($_POST['born-year'])) {
-    echo "<b>No se especifico el año de nacimiento</b><br/>";
+    if (empty($_POST['birthday'])) {
+    echo "<b>No se especifico fecha de nacimiento</b><br/>";
     $valida = false;
   }
     if (empty($_POST['profession'])) {
@@ -61,9 +53,7 @@
   //Asignación de variables de tomador
   $nombre=$_POST["name"];
   $cedula=$_POST["cedula"];
-  $bornDay=$_POST["born-day"];
-  $bornMonth=$_POST["born-month"];
-  $bornYear=$_POST["born-year"];
+  $birthday=$_POST["birthday"];
   $profesion=$_POST["profession"];
   $email=$_POST["email"];
   $celular=$_POST["celular"];
@@ -76,7 +66,7 @@
     $message = "<html><body><h2>Esta es la información del tomador: </h2><br>";
 	$message.= "<h3>Nombre: ".$nombre ."<br>";
 	$message.= "Cédula: ".$cedula ."<br>";
-	$message.= "Día de cumpleaños: ".$bornDay." ".$bornMonth." ".$bornYear."<br>";
+	$message.= "Día de cumpleaños: ".$birthday."<br>";
 	$message.= "Profesión: ".$profesion."<br>";
 	$message.= "Correo electrónico: ".$email."<br>";
 	$message.= "Celular: ".$celular."<br>";
