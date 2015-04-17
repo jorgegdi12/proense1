@@ -301,9 +301,9 @@
     $message.= "</h3></body></html>"; 
   if(mail($to, $subject, $message,$headers))
      {
-      echo "<p>Mensaje enviado.<br /><a href=\"http://proense.com/\">Regresar a la página principal</a></p>";
+      header('Location: envia.html');
      }
 	else
-		echo "<p>Mensaje No enviado.<br /><a href=\"http://proense.com/\">Regresar a la página principal</p>";
+		
   }
 ?>
